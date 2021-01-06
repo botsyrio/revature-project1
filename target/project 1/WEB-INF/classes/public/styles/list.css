@@ -1,0 +1,74 @@
+*{
+    font-family: 'Roboto Mono', monospace;
+}
+.pageTitle{
+    margin-top: 25px;
+    margin-left: 2.25%;
+}
+/* 
+#filterSubmit{
+    background-color: inherit;
+    border-radius: 25px;
+    padding:2px;
+} */
+#filterForm{
+    margin-left:2.5%;
+}
+#filterSubmit, .approveButton, .denyButton{
+    margin: 10px;
+    height: 40px;
+
+    border-radius: 25px;
+    padding:4px;
+    border: 1px solid #888888;
+    vertical-align: middle;
+    text-align: right;
+    min-width:max-content;
+  background-color: inherit;
+  font-family: inherit;
+}
+#filterSubmit:hover, .approveButton:hover, .denyButton:hover{
+    background-color: rgb(236, 236, 222);
+}
+#filterSubmit:active, .approveButton:active, .denyButton:active{
+    background-color: rgb(165, 165, 158);
+}
+#myTable{
+    table-layout: fixed;
+    width: 92%;
+    min-width: 676px;
+    margin:auto;
+    border-collapse: collapse;
+}
+.tableHead th{
+    text-align: left;
+    padding: 5px;
+}
+.tableHead, .listItem{
+    font-family: 'Roboto Mono', monospace;
+}
+.listItemWrapper{
+    min-height: 71px;
+}
+.listItem{
+    margin-top: 4px;
+    border-top:   1px solid rgb(139, 138, 133);
+    border-bottom: 1px solid rgb(139, 138, 133); 
+    
+}
+.dateField, .amountField{
+    min-width: max-content;
+    white-space: nowrap;
+}
+.listItem .listField{
+    vertical-align: top;
+    padding: 5px;
+}
+
+.listItem .resolveForm{
+    display: inline;
+}
+
+.spacer{
+    height: 65px;
+}

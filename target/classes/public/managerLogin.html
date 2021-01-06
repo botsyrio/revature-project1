@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
+
+    <title>Employee Reimbursement Company</title>
+</head>
+<body>
+    
+    <div id=headline>
+        <a href="/index.html">
+            <h1>Employee Reimbursement Company</h1>
+            <p>You buy it? We reimburse it.</p>
+        </a>
+    </div>
+    <!-- <h3>Manager login</h3>
+    <form action="/managerLogin" method="POST">
+        <input type="text" name="email">
+        <input type="password" name="password" id="managerPassword">
+        <input type="submit" value="login">
+    </form> -->
+
+    <div class="totalManagerContainer">
+        <a href="/index.html"><h3 class="loginLogo">Employee Reimbursement Company</h3></a>
+        <div class="loginBlock">
+            <div class="contentContainer">
+                <h3>Manager Login:</h3>
+                <form action="/managerLogin" method="POST">
+                    <div class="emailBlock">
+                        <div class="label">Email</div>
+                        <input type="text" name="email" size="25" required>
+                    </div>
+                    <div class="passwordBlock">
+                        <div class="label">Password</div>
+                        <input type="password" name="password" id="managerPassword" size="25" required>
+                    </div>
+                    <div class="submitBlock">
+                        <input id="submitButt" type="submit" value="login">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

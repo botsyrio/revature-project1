@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Roboto Mono', monospace;
+}
+body{
+    background-color: rgb(238, 238, 142);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.toolbar{
+    
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  top: 0;
+  padding: 5px;
+  min-height: 50px;
+  border-bottom: 1px solid #777;
+  margin-bottom: 2px;
+  width: 100%;
+  font-family: 'Work Sans', sans-serif;
+}
+.toolbar>div{
+    display: block;
+}
+.logo{
+    height: 100%;
+    display: inline-block;
+}
+.loginDropdown{
+    float: right;
+    overflow: hidden;
+}
+
+.dropBtn{
+    
+    margin: 10px;
+    display:block;
+    height: 55px;
+    border-radius: 25px;
+    padding:9px;
+    border: 1px solid #888888;
+    vertical-align: middle;
+    text-align: right;
+    min-width:max-content;
+  background-color: inherit;
+  font-family: inherit;
+  
+}
+
+.loginDropdown .dropBtn:hover{
+    background-color: rgb(184, 202, 219);
+}
+.loginDropdown.clicked .dropBtn{
+    background-color: slategrey;
+}
+
+.loginDropdown .login-content{
+    display: none;
+    position: absolue;
+}
+.loginDropdown.clicked .login-content{
+    display: block;
+}
+.login-content {
+    display: block;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border:1px solid black;
+    position: absolute;
+}
+.login-content a{
+    float: none;
+    border-top: 1px solid black;
+    display: block;
+}

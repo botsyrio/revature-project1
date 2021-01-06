@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!--        configure the datasource-->
+        <property name="hibernate.connection.url">jdbc:postgresql://database-2.cdpohdjx08rc.us-east-1.rds.amazonaws.com:5432/project1Test</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">b51RV$jp&amp;5bjE</property>
+
+        <!--        driver spec-->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL9Dialect</property>
+
+        <!--        make things nice-->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+
+        <!-- use hibernate to create our schema -->
+        <!-- Four values for hbm2ddl.auto
+          - create - drop then create at startup
+          - create-drop - create at startup and drop at shutdown
+          - update - only update schema diffs
+          - none - default, don't do it
+         -->
+
+        <!--        mappings-->
+        <mapping class="com.revature.models.Employee"/>
+        <mapping class="com.revature.models.Manager"/>
+        <mapping class="com.revature.models.ReimbursementReq"/>
+    </session-factory>
+</hibernate-configuration>

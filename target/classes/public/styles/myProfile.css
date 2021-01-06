@@ -1,0 +1,45 @@
+.pageTitle{
+    margin: 10px;
+}
+.profile{
+    width:92%;
+    margin: auto;
+    margin-top: 30px;
+}
+.field{
+    margin: 15px;
+}
+.label{
+    color: rgb(104, 103, 98)
+}
+.firstNameField, .lastNameField{
+    display: inline-block;
+}
+
+.firstNameField{
+    margin-right:20px;
+}
+
+
+#changeProfileButt, #changePasswordButt{
+    display: inline-block;
+    margin: 10px;
+    
+    height: 40px;
+
+    border-radius: 25px;
+    padding:10px;
+    font-size: 14px;
+    border: 1px solid #888888;
+    vertical-align: middle;
+    text-align: right;
+    min-width:max-content;
+  background-color: inherit;
+  font-family: inherit;
+}
+#changeProfileButt:hover, #changePasswordButt:hover{
+    background-color: rgb(236, 236, 222);
+}
+#changeProfileButt:active, #changePasswordButt:active{
+    background-color: rgb(165, 165, 158);
+}

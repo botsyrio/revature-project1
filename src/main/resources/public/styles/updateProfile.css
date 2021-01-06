@@ -1,0 +1,62 @@
+.pageTitle{
+    margin: 10px;
+}
+.content{
+    width:92%;
+    margin: auto;
+    margin-top: 30px;
+}
+.bigGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 4fr;
+}
+.formField{
+    grid-column: 1/2;
+    margin: 15px;
+}
+.label{
+    max-width: max-content;
+    color: rgb(104, 103, 98)
+}
+
+.firstNameField{
+    grid-column: 1/2;
+}
+.lastNameField{
+    grid-column: 2/3;
+}
+.aboutMeField{
+    grid-column: 1/5;
+}
+.aboutMeField textarea{
+    width: 100%;
+}
+#submitButt{
+    max-width: max-content;
+    justify-self: end;
+    grid-column: 4/5;
+}
+#submitButt, .content a{
+    margin: 10px;
+    height: 40px;
+    border-radius: 25px;
+    padding:10px;
+    border: 1px solid #888888;
+    vertical-align: middle;
+    min-width:max-content;
+  background-color: inherit;
+  font-family: inherit;
+}
+#submitButt:hover, .content a:hover{
+    background-color: rgb(236, 236, 222);
+}
+#submitButt:active, .content a:active{
+    background-color: rgb(165, 165, 158);
+}
+
+.bottomLinks{
+    margin-top: 20px;
+}
+.bottomLinks a{
+    font-size: 14px;
+}

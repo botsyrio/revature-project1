@@ -1,0 +1,109 @@
+.topNavContainer{
+    border-bottom: 1px solid black;
+    padding: 25px 40px;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+}
+.topNavLogoContainer{
+    height: 100%;
+    display: inline-block;
+    width: min-content;
+}
+.topNavLinkContainer{
+    width: 100%;
+    margin-left: 20px;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+}
+.topNavLink{
+    margin: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    word-spacing: -4px;
+}
+.topNavLink:hover{
+    color: rgb(155, 155, 149);
+}
+.topNavLink:active{
+    color: rgb(206, 206, 194);
+}
+.topNavLinkContainer p:hover, .topNavLinkContainer p:active{
+    color: black;
+}
+#myProfileLink{
+    margin-left: auto;
+}
+#logoutLink{
+    margin-right: 0.5%;
+}
+.topNavProfileLinkContainer{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 2.5%;
+    justify-content: end;
+    flex-direction: row;
+}
+/* .topNavProfileContainer{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 2.5%;
+}
+.profileButt{
+    margin: 10px;
+    height: 40px;
+    justify-self: end;
+    border-radius: 25px;
+    padding:10px;
+    font-size: 14px;
+    border: 1px solid #888888;
+    vertical-align: middle;
+    text-align: right;
+    min-width:max-content;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+.profileButt:hover{
+    background-color: rgb(236, 236, 222);
+}
+.profileButt:active{
+    background-color: rgb(165, 165, 158);
+}
+
+.profile-content{
+    display: none;
+}
+.clicked .profileButt{
+    background-color:#888888;
+}
+.clicked .profileButt:hover{
+    background-color:#adada7
+}
+
+.clicked .profile-content{
+    display: flex;
+    flex-direction: column;
+    border:1px solid black;
+    border-radius: 8px;
+    position: absolute;
+    
+    background-color: rgb(238, 238, 142);
+}
+.clicked .profileLink{
+    padding: 10px;
+    background-color: rgb(238, 238, 142);
+    border-radius: inherit;
+}
+.clicked .profileLink:hover{
+    background-color:  rgb(255, 255, 205);
+    color: rgb(88, 88, 63);
+}
+#logoutLink{
+    border-top: 1px solid black;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+} */

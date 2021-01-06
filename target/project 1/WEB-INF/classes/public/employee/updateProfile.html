@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/topnav.css">
+    <link rel="stylesheet" href="../styles/updateProfile.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Reimbursement Company</title>
+</head>
+
+<body>
+    
+    
+    <div class="topNavContainer">
+        <div class="topNavLogoContainer">
+            <a href="/employee/homepage.html">
+                <h3>Employee Reimbursement Company</h3>
+                <!-- <p>You buy it?<br> We reimburse it.</p> -->
+            </a>
+        </div>
+        <div class="topNavLinkContainer">
+            <a href="/employee/homepage.html" id="homeLink" class="topNavLink">Home</a>
+            <a href="/employee/viewMyReqs.html"id="viewMyReqsLink" class="topNavLink">My Requests</a>
+            <a href="/employee/requestSubmit.html" id="requestSubmitLink" class="topNavLink">Make A Request</a>
+            <a href="/employee/myProfile.html" id="myProfileLink" class="topNavLink"></a>
+            <a href="/logout" id="logoutLink" class="topNavLink">Log Out</a>
+        </div>
+    </div>
+    <div class="content">
+        <h1 class="pageTitle">Update your profile</h1>
+    
+        <form action="/employee/updateProfile" method="post">
+            <div class="bigGrid">
+
+                <div class="formField">
+                    <div class="label">Email</div>
+                    <input type="email" name="email" id="email" maxlength="255" size="25" required>
+                </div>
+                <div class="formField firstNameField">
+                    <!-- <label for="firstName">First Name: </label> -->
+                    <div class="label">First Name</div>
+                    <input type="text" name="firstName" id="firstName" maxlength="50" size="25" required>
+                    
+                </div>
+                <div class="formField lastNameField">
+                    <div class="label">Last Name</div>
+                    <input type="text" name="lastName" id="lastName" maxlength="50" size="25" required>
+                   
+                </div>
+                <div class="formField">
+                    <div class="label">Job Title</div>
+                    <input type="text" name="jobTitle" id="jobTitle" maxlength="50" size="25">
+                    
+                </div>
+                <div class="formField">
+                    <div class="label">Birthday</div>
+                    <input type="date" name="birthday" id="birthday">
+                    
+                </div>
+                <div class="formField aboutMeField">
+                    <div class="label">About Me</div>
+                    <textarea name="aboutMe" id="aboutMe" rows="10" maxlength="1000"></textarea>
+                </div>
+                <input id="submitButt", type="submit" value="Submit">
+            </div>
+        </form>
+        <div class="bottomLinks"> 
+            <a href="/employee/myProfile.html">Go Back To Profile Screen</a>
+            <a href="/employee/updatePassword.html">Change Your Password</a>
+            
+        </div>
+    </div>
+    <script src="../topNav.js"></script>
+    <script src="/employee/updateProfile.js"></script>
+</body>
+</html>

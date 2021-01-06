@@ -1,0 +1,101 @@
+#headline{
+    padding: 1% 2%;
+}
+
+.totalEmployeeContainer{
+    margin: auto;
+    margin-top: 4%;
+    width: max-content;
+}
+.totalManagerContainer{
+    
+    margin: auto;
+    margin-top: 4%;
+    width: max-content;
+}
+.totalResetContainer{
+    margin: auto;
+    margin-top: 5%;
+    width: max-content;
+}
+.loginLogo{
+    max-width: 150px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.loginBlock{
+    padding: 20px 0px 30px;
+    border: 1px solid #888888;
+    border-radius: 5px;
+}
+form{
+    width: fit-content;
+    max-width: max-content;
+}
+.contentContainer{
+    margin:20px 20px 30px;
+}
+form>div{
+    margin: 10px;
+}
+.label{
+    max-width: max-content;
+    color: rgb(104, 103, 98)
+}
+.returnBlock{
+    height: 40px;
+    width: 162.5px;
+    border-radius: 25px;
+    display: inline-block;
+    margin-top: 2px;
+    padding:10px;
+    border: 1px solid #888888;
+    min-width:max-content;
+    text-align: center;
+    vertical-align: auto;
+  background-color: inherit;
+  font-family: inherit;
+  font-size: 14px;
+}
+#return{
+    
+}
+#forgot{
+    height: 40px;
+    width: 100%;
+    display: inline-block;
+    margin-top: 2px;
+    border-radius: 25px;
+    padding:12px;
+    text-align: center;
+    border: 1px solid #888888;
+    vertical-align: middle;
+    min-width:max-content;
+  background-color: inherit;
+  font-family: inherit;
+  font-size: 13px;
+}
+#forgot:hover, .returnBlock:hover{
+    background-color: rgb(236, 236, 222);
+}
+#forgot:active, .returnBlock:active{
+    background-color: rgb(165, 165, 158);
+}
+#submitButt{
+    height: 40px;
+    width: 100%;
+    border-radius: 25px;
+    padding:4px;
+    background-color: rgb(3, 3, 3);
+    color: white;
+    border: 1px solid black;
+    vertical-align: middle;
+    min-width:max-content;
+  font-family: inherit;
+}
+#submitButt:hover{
+    background-color: rgb(85, 85, 81);
+}
+#submitButt:active{
+    background-color: rgb(189, 189, 182);
+}

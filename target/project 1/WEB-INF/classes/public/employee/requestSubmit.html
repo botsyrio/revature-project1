@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/topnav.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
+    <title>Employee Reimbursement Company</title>
+</head>
+<body>
+    
+    
+    <div class="topNavContainer">
+        <div class="topNavLogoContainer">
+            <a href="/employee/homepage.html">
+                <h3>Employee Reimbursement Company</h3>
+                <!-- <p>You buy it?<br> We reimburse it.</p> -->
+            </a>
+        </div>
+        <div class="topNavLinkContainer">
+            <a href="/employee/homepage.html" id="homeLink" class="topNavLink">Home</a>
+            <a href="/employee/viewMyReqs.html"id="viewMyReqsLink" class="topNavLink">My Requests</a>
+            <a href="/employee/requestSubmit.html" id="requestSubmitLink" class="topNavLink">Make A Request</a>
+            <a href="/employee/myProfile.html" id="myProfileLink" class="topNavLink"></a>
+            <a href="/logout" id="logoutLink" class="topNavLink">Log Out</a>
+        </div>
+    </div>
+    <div class="totalEmployeeContainer">
+        <a href="/employee/homepage.html"><h3 class="loginLogo">Employee Reimbursement Company</h3></a>
+        <div class="loginBlock">
+            <div class="contentContainer">
+                <h3>Submit Reimbursement Request</h3>
+                <form action="/employee/requestSubmit" method="POST">
+                    <div class="emailBlock">
+                        <div class="label">Date</div>
+                        <input type="date" name="dateOf" id="dateOf" required>
+                    </div>
+                    <div class="amountBlock">
+                        <div class="label">Amount</div>
+                        <input type="number" name="amount" id="amount" step="0.01" min="0" required>
+                    </div>
+                    <div class="detailsBlock">
+                        <div class="label">Details</div>
+                        <textarea name="details" id="details" cols="30" rows="2" maxlength="50" required></textarea>
+                    </div>
+                    <div class="submitBlock">
+                        <input id="submitButt" type="submit" value="Submit Request">
+                    </div>
+                    <div class="forgotBlock">
+                        <a id="forgot" href="/employee/homepage.html">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+<script src="../topNav.js"></script>
+</body>
+</html>

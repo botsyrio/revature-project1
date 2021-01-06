@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/topnav.css">
+    <link rel="stylesheet" href="../styles/myProfile.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Reimbursement Company</title>
+</head>
+<body>
+    
+    <div class="topNavContainer">
+        <div class="topNavLogoContainer">
+            <a href="/employee/homepage.html">
+                <h3>Employee Reimbursement Company</h3>
+                <!-- <p>You buy it?<br> We reimburse it.</p> -->
+            </a>
+        </div>
+        <div class="topNavLinkContainer">
+            <a href="/employee/homepage.html" id="homeLink" class="topNavLink">Home</a>
+            <a href="/employee/viewMyReqs.html"id="viewMyReqsLink" class="topNavLink">My Requests</a>
+            <a href="/employee/requestSubmit.html" id="requestSubmitLink" class="topNavLink">Make A Request</a>
+            <a href="/employee/myProfile.html" id="myProfileLink" class="topNavLink"></a>
+            <a href="/logout" id="logoutLink" class="topNavLink">Log Out</a>
+        </div>
+    </div>
+    
+    <div class="profile">
+        <h1 class="pageTitle">Your profile</h3>
+        <div class="field emailField">
+            <div class="label">E-mail</div>
+            <div class="value" id="emailValue"></div>
+        </div>
+        <div class="field firstNameField">
+            <div class="label">First name</div>
+            <div class="value" id="firstNameValue"></div>
+        </div>
+        <div class="field lastNameField">
+            <div class="label">Last name</div>
+            <div class="value" id="lastNameValue"></div>
+        </div>
+        <div class="field jobTitleField">
+            <div class="label">Job Title</div>
+            <div class="value" id="jobTitleValue"></div>
+        </div>
+        <div class="field birthdayField">
+            <div class="label">Birthday</div>
+            <div class="value" id="birthdayValue"></div>
+        </div>
+        <div class="field aboutMeField">
+            <div class="label">About Me</div>
+            <div class="value" id="aboutMeValue"></div>
+        </div>
+        <a id="changeProfileButt" href="/employee/updateProfile.html">Change Your Profile</a>
+        <a id="changePasswordButt"href="/employee/updatePassword.html">Change Your Password</a>
+    </div>
+
+    <script src="../topNav.js"></script>
+    <script src="/employee/myProfile.js"></script>
+</body>
+</html>
